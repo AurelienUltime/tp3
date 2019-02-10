@@ -1,0 +1,6 @@
+.Photo img{
+   
+    display: inline-flex;
+    width:30%;
+    border:1px dotted green;
+}
