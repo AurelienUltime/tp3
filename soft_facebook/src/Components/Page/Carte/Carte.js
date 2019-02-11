@@ -6,6 +6,7 @@ import "./Carte.css";
 class Carte extends Component {
    
     constructor(props) {
+      
         super(props)
         this.state = { 
           backgroundColor:"#ffffff",
@@ -13,10 +14,18 @@ class Carte extends Component {
         };
       }
     handleColor(){
-      this.setState({backgroundColor:"#000000"});
+      if(this.state.backgroundColor =="#ffffff")
+      {
+        this.setState({backgroundColor:"yellow"});
+
+      }
+      if(this.state.backgroundColor =="yellow")
+      {
+        this.setState({backgroundColor:"#ffffff"})
+      }  
+           
     }
    
-
     render() {
       
         const {author, photo, description} = this.props.propriete1;
