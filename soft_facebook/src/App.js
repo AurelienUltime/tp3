@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Carte from "./Components/Page/Carte/Carte";
 import './App.css';
+import Page from "./Components/Page/Page";
 //import photoBonFormatCV from "photoBonFormatCV.jpg";
 const carte1 = {
   author: {
@@ -53,6 +54,11 @@ const carte3 = {
   }
   
 }
+const page1= {
+  texte : "je ne change pas ma couleur de background et je suis supposé contenir un bouton like"
+
+}
+
 class App extends Component {
 
 // initialiser le state
@@ -60,7 +66,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      user: carte1
+      user: carte1,
+      pg: page1
     }
 
   }
@@ -82,11 +89,12 @@ class App extends Component {
     return (
       <div className="Corps">
 
-        <button onClick={()=>{this.handleClick1()}}>Jeanne</button>
-        <button onClick={()=>{this.handleClick2()}}>Martine</button>
-        <button onClick={()=>{this.handleClick3()}}>Claude</button>
+        <button className="btn" onClick={()=>{this.handleClick1()}}>Jeanne</button>
+        <button className="btn" onClick={()=>{this.handleClick2()}}>Martine</button>
+        <button className="btn" onClick={()=>{this.handleClick3()}}>Claude</button>
         <h2>Bonjour {this.state.user.author.prenom} </h2>
         <Carte propriete1={this.state.user}/>
+        <Page texte={this.state.pg}/>
     
       </div>
       

@@ -1,20 +1,18 @@
-import User from "./User/User";
-
+import React, { Component } from 'react';
+import Carte from "./Carte/Carte";
 import "./Page.css";
+
 class Page extends Component {
     render() {
       
-        const {author, photo, description} = this.props.propriete1;
-
+        const {texte} =this.props.texte;
     
     return(
-        <div className="murFB">
-          <Auteur propriete2={author}/>
-          <Photo img2={photo}/>
-          <Contenu descrip={description}/>
-          
+        <div className="conteneur_bas">
+         <p>{texte}</p>
+         <button className="bonus">j'aime</button>
         </div>
-      )
+      );
 }
 }
 export default Page; 

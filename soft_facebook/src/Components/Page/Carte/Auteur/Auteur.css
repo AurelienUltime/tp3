@@ -1,8 +1,7 @@
 .identite{
-    border:1px dotted red;
+  /*  border:1px dotted red;*/
     display: inline-flex;
     width: 40%;
-    
     justify-content: space-between;
     /*text-align: left;*/
     

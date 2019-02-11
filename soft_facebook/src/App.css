@@ -16,7 +16,7 @@ button{
   display: inline;
   margin: 2px;
   background:url(http://css.mammouthland.net/images/boutonnoir.png) no-repeat;
-  border: 1px solid black;
+   border: 1px solid black;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -26,8 +26,7 @@ button{
   
 
 }
-a hover{
-  background:url(http://css.mammouthland.net/images/boutonnoir2.png) no-repeat;
-  
-
+.btn{
+  width: 70px;
+  margin-top: 20px;
 }
