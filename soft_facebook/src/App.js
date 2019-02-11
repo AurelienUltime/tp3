@@ -26,7 +26,7 @@ const carte2 = {
     age: "Indéfini"
   },
   photo: {
-    src: "https://i.imgur.com/NPto19s.jpg",
+    src: "https://www.agoravox.fr/local/cache-vignettes/L300xH375/martinealaplage_m-5d69a.jpg",
     alt: "meme"
   },
   description: {
@@ -43,7 +43,7 @@ const carte3 = {
     age: "Indéfini"
   },
   photo: {
-    src: "https://i.imgur.com/NPto19s.jpg",
+    src: "https://vignette.wikia.nocookie.net/michelsardou/images/3/3f/Claude_Fran%C3%A7ois.jpg/revision/latest?cb=20171026193315&path-prefix=fr",
     alt: "meme"
   },
   description: {
